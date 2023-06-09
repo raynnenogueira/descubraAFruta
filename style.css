@@ -1,0 +1,92 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#app {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #03856487;
+    padding: 11%;
+}
+
+div {
+    border-radius: 13px;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(rgb(61, 28, 249), rgb(173, 27, 27));
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-top: 14px;
+    font-size: 16px;
+    background-color: rgb(61, 29, 244);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(102, 77, 239);
+}
+
+
+@media (max-width: 479px) {
+    #app {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    body {
+        padding: 1%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 50%;
+        padding: 6px;
+        font-size: 12px;
+    }
+}

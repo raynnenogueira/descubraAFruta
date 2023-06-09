@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="video-game-play-pad-boy-gameboy-nintendo_108539.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Descubra a Fruta</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Descubra a Fruta</h1>
+      <label for="guess">Digite uma fruta:</label>
+      <input type="text" id="guess" v-model="tentativaJogador" />
+      <button v-on:click="verificarTentativa">Enviar</button>
+      <p>{{ dica }}</p>
+      <p>{{ resultado }}</p>
+      <p v-if="quantidadeErros > 0">Erros: {{ quantidadeErros }} </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> 
+
+    <script src="script.js"></script>
+  </body>
+</html>
