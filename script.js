@@ -17,7 +17,8 @@ const app = new Vue({
       "cereja",
       "amora",
       "limao",
-      "ameixa"
+      "ameixa",
+      "morango"
     ],
     frutaSelecionada: "",
     tentativaJogador: "",
@@ -34,10 +35,13 @@ const app = new Vue({
     },
 
     verificarTentativa() {
+      if (this.tentativaJogador.trim() == '') {
+        return;
+      }
       if (this.tentativaJogador.toLowerCase() === this.frutaSelecionada.toLowerCase()) {
-        this.resultado = "Parabéns! Você acertou!";
+        this.resultado = "😀 Parabéns! Você acertou. ";
       } else {
-        this.resultado = "Você errou, que pena! Tente novamente.";
+        this.resultado = "🙁 Você errou, que pena! Tente novamente.";
         this.quantidadeErros++;
 
         if (this.quantidadeErros >= 3 && this.letrasReveladas < this.frutaSelecionada.length) {
@@ -50,7 +54,7 @@ const app = new Vue({
     mostrarDica() {
       let dica = "";
       for (let i = 0; i < this.frutaSelecionada.length; i++) {
-        if (this.frutaSelecionada[i] === " " || i < this.letrasReveladas) { 
+        if (this.frutaSelecionada[i] === " " || i < this.letrasReveladas) {
           dica += this.frutaSelecionada[i];
         } else {
           dica += "_";

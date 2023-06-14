@@ -61,10 +61,13 @@ button:hover {
 }
 
 
-@media (max-width: 479px) {
+@media (max-width: 435px) {
     #app {
-        max-width: 95%;
-        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* max-width: 95%;
+        padding: 10px; */
     }
 
     body {
